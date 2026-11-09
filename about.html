@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于我 · 李成蹊</title>
+<meta name="description" content="李成蹊的个人简历：武汉理工大学 数字经济2502。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6"/><path d="m16 6 6 6-6 6"/></svg></span>
+      <span>李成蹊<small>作品集 · 数智编程</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="about.html" aria-current="page">关于我</a>
+      <a href="projects.html">项目成果</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="crumb"><a href="index.html">首页</a> / <span>关于我</span></div>
+      <h1 class="page-title">关于我</h1>
+    </div>
+  </section>
+
+  <section style="padding-bottom:26px">
+    <div class="container">
+      <div class="toolbar no-print" style="justify-content:space-between;margin-bottom:18px">
+        <span class="hint">简历里所有空白处都可以直接打字，改完自动保存。以后面试前把内容填好，点右边的按钮就能打印或存成 PDF。</span>
+        <button type="button" class="tb-btn solid" data-act="print">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/></svg>
+          打印 / 存为 PDF
+        </button>
+      </div>
+
+      <div class="panel resume-doc">
+
+        <!-- 简历头部：姓名信息 + 证件照 -->
+        <div class="resume-head">
+          <div class="rh-left">
+            <h2 class="rh-name"><span data-out="profile.name">李成蹊</span></h2>
+            <p class="rh-line"><span data-out="profile.school">武汉理工大学</span> · <span data-out="profile.className">数字经济2502</span></p>
+            <div class="rh-contact">
+              <div class="field"><label class="no-print">电话</label><input class="inp plain" data-bind="resume.phone" placeholder="电话：点击填写"></div>
+              <div class="field"><label class="no-print">邮箱</label><input class="inp plain" data-bind="resume.email" placeholder="邮箱：点击填写"></div>
+            </div>
+          </div>
+          <div class="rh-photo">
+            <div class="photo-frame resume-photo"><img data-photo src="avatar.jpg" alt="李成蹊的证件照"></div>
+            <button type="button" class="photo-change no-print" data-act="avatar">更换照片</button>
+          </div>
+        </div>
+
+        <!-- 简历正文：左侧栏目名 + 右侧内容，表格形式 -->
+        <div class="rtable">
+
+          <div class="rsec">
+            <div class="rsec-label">基本信息</div>
+            <div class="rsec-body">
+              <div class="rinfo-grid">
+                <div class="field"><label>姓名</label><input class="inp" data-bind="profile.name" placeholder="姓名"></div>
+                <div class="field"><label>性别</label><input class="inp" data-bind="resume.gender" placeholder="男 / 女"></div>
+                <div class="field"><label>出生年月</label><input class="inp" data-bind="resume.birth" placeholder="例如：2006-09"></div>
+                <div class="field"><label>籍贯</label><input class="inp" data-bind="resume.native" placeholder="例如：湖北武汉"></div>
+                <div class="field"><label>政治面貌</label><input class="inp" data-bind="resume.polity" placeholder="例如：共青团员"></div>
+                <div class="field"><label>学校 / 班级</label><input class="inp" data-bind="profile.className" placeholder="武汉理工大学 · 数字经济2502"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rsec">
+            <div class="rsec-label">求职意向</div>
+            <div class="rsec-body">
+              <input class="inp plain" data-bind="resume.intent" placeholder="例如：数据分析 / 产品运营 / 前端开发实习生……（想找什么方向的工作或实习）">
+            </div>
+          </div>
+
+          <div class="rsec">
+            <div class="rsec-label">教育背景</div>
+            <div class="rsec-body">
+              <textarea class="ta" data-bind="resume.edu" placeholder="时间 学校 专业/班级 学历&#10;主修课程、成绩排名（如有）&#10;例如：&#10;2025.09 - 2029.06  武汉理工大学  数字经济  本科&#10;主修：统计学、数据分析、程序设计、数字经济学……"></textarea>
+            </div>
+          </div>
+
+          <div class="rsec">
+            <div class="rsec-label">个人能力</div>
+            <div class="rsec-body">
+              <textarea class="ta" data-bind="resume.skills" placeholder="写你实际会的东西，例如：&#10;· AI 工具：通义灵码，能独立用 AI 完成网页与小工具开发&#10;· 编程语言：Python 基础、HTML/CSS/JavaScript&#10;· 办公软件：Excel 数据处理、PPT 汇报&#10;· 语言：英语四/六级"></textarea>
+            </div>
+          </div>
+
+          <div class="rsec">
+            <div class="rsec-label">校园经历</div>
+            <div class="rsec-body">
+              <textarea class="ta" data-bind="resume.campus" placeholder="担任过的职务、参加过的社团/活动/实习，做了什么、有什么结果&#10;例如：&#10;2025.10 - 至今  班级学习委员  负责收发作业、组织学习小组"></textarea>
+            </div>
+          </div>
+
+          <div class="rsec">
+            <div class="rsec-label">荣誉奖项</div>
+            <div class="rsec-body">
+              <textarea class="ta" data-bind="resume.awards" placeholder="奖学金、竞赛获奖、证书等，按时间列出&#10;例如：&#10;2026.05  校级数学建模竞赛二等奖"></textarea>
+            </div>
+          </div>
+
+          <div class="rsec">
+            <div class="rsec-label">自我评价</div>
+            <div class="rsec-body">
+              <textarea class="ta" data-bind="resume.selfEval" placeholder="几句话介绍自己的性格特点、做事风格、擅长什么。写具体的，别写空话。"></textarea>
+            </div>
+          </div>
+
+          <div class="rsec">
+            <div class="rsec-label">作品链接</div>
+            <div class="rsec-body">
+              <p class="rsec-note">我做的所有项目都收录在 <a href="projects.html">项目成果</a> 页，含每个项目的设计思路、编写日志与迭代过程，欢迎查看。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <details class="panel intro-edit no-print" style="margin-top:20px">
+        <summary>首页那段介绍（首页大标题下面的话）</summary>
+        <div style="padding:6px 4px 10px">
+          <textarea class="ta" style="min-height:110px" data-bind="profile.intro" placeholder="写在首页大标题下面的话"></textarea>
+          <p class="hint" style="margin-top:8px">在这里改，首页会同步更新，改完自动保存。</p>
+        </div>
+      </details>
+
+      <div class="toolbar no-print" style="margin-top:20px">
+        <a class="tb-btn solid" href="projects.html">去看我的项目成果</a>
+        <a class="tb-btn" href="index.html">回到首页</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6"/><path d="m16 6 6 6-6 6"/></svg></span>
+          <span data-out="profile.name">李成蹊</span>
+        </div>
+        <p class="footer-about"><span data-out="profile.school">武汉理工大学</span> · <span data-out="profile.className">数字经济2502</span><br>数智编程技术基础应用 · 个人作品集</p>
+      </div>
+      <div class="footer-col">
+        <h4>页面</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html">关于我</a></li>
+          <li><a href="projects.html">项目成果</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> <span data-out="profile.name">李成蹊</span></span>
+      <span>内容可在页面上直接修改，自动保存在本机浏览器</span>
+    </div>
+  </div>
+</footer>
+
+<script src="store.js?v=4" defer></script>
+<script src="main.js?v=4" defer></script>
+</body>
+</html>
